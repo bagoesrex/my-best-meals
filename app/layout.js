@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased flex justify-center items-center h-screen`}>
+      <body>
         {children}
       </body>
     </html>
