@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Header from "../components/header";
 
 export default function Home() {
   return (
-    <main className="h-screen w-full">
-      <Header />
+    <main className="w-full">
       <div className="flex flex-col mt-2">
         <h1 className="font-sans pt-2">My Fav Masakan Istri (Megumin)</h1>
         <p className="text-orange-500 underline underline-offset-4">
