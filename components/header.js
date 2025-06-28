@@ -9,7 +9,7 @@ export default function Header() {
     <div className="relative z-10">
       <HeaderBackground />
 
-      <header className="flex items-center justify-between px-6 py-4 relative">
+      <header className="relative flex items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src={Logo}
