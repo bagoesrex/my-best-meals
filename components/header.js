@@ -1,13 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
+
+import Logo from "@/public/logo.png"
 
 export default function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-2 bg-white shadow-md">
       <Link href="/" className="flex items-center space-x-2">
-        <img
-          src="/logo.png"
+        <Image
+          src={Logo}
           alt="Header logo"
           className="w-12 h-12 object-cover"
+          priority
         />
         <span className="text-xl font-bold text-gray-800">MY BEST MEALS</span>
       </Link>
