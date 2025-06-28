@@ -9,6 +9,15 @@ export default function Home() {
       <p className="text-orange-500 underline underline-offset-4">
         <Link href={"/about"}>About Link</Link>
       </p>
+      <p className="text-orange-500 underline underline-offset-4">
+        <Link href={"/meals"}>Meals Link</Link>
+      </p>
+      <p className="text-orange-500 underline underline-offset-4">
+        <Link href={"/meals/share"}>Share Meals Link</Link>
+      </p>
+      <p className="text-orange-500 underline underline-offset-4">
+        <Link href={"/community"}>Community Link</Link>
+      </p>
     </main>
   );
 }
