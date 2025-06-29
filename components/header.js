@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Logo from "@/public/logo.png";
 import HeaderBackground from "./header-background";
+import NavLink from "./nav-link";
 
 export default function Header() {
   return (
@@ -21,22 +22,12 @@ export default function Header() {
         </Link>
 
         <nav>
-          <ul className="flex gap-6 text-gray-700 font-medium">
+          <ul className="flex gap-6 font-medium">
             <li>
-              <Link
-                href="/meals"
-                className="hover:text-primary transition-colors duration-200"
-              >
-                Browse Meals
-              </Link>
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
             <li>
-              <Link
-                href="/community"
-                className="hover:text-primary transition-colors duration-200"
-              >
-                Foodies Community
-              </Link>
+              <NavLink href="/community">Foodies Community</NavLink>
             </li>
           </ul>
         </nav>
