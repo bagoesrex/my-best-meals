@@ -1,34 +1,38 @@
+import ImageSlideshow from "@/components/image-slideshow";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-center w-full px-6 py-10 z-30 text-center">
-      <header className="max-w-3xl space-y-6">
-        <div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800">
+      <header className="flex flex-row items-center gap-2 max-w-4xl w-full text-left">
+        <div className="flex w-full justify-center items-center">
+          <ImageSlideshow />
+        </div>
+        <div className="w-full space-y-6">
+          <h1 className="text-4xl font-extrabold text-gray-800">
             MyBestMeals — Food for Passionate Foodies
           </h1>
           <p className="mt-4 text-lg text-gray-600">
             Discover, enjoy, and share your best homemade meals with the world.
           </p>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-          <Link
-            href="/community"
-            className="px-6 py-3 rounded-full bg-primary font-medium hover:bg-primary/80 transition"
-          >
-            Join the Community
-          </Link>
-          <Link
-            href="/meals"
-            className="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition"
-          >
-            Explore Meals
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+            <Link
+              href="/community"
+              className="px-6 py-3 rounded-full bg-primary font-medium hover:bg-primary/80 transition"
+            >
+              Join the Community
+            </Link>
+            <Link
+              href="/meals"
+              className="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition"
+            >
+              Explore Meals
+            </Link>
+          </div>
         </div>
       </header>
 
-      <section className="max-w-2xl mt-20 text-left space-y-4">
+      <section className="max-w-4xl mt-15 text-left space-y-4">
         <h2 className="text-2xl font-semibold text-gray-800">How it works</h2>
         <p className="text-gray-600">
           MyBestMeals is a platform where you can share your best recipes and
@@ -41,7 +45,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="max-w-2xl mt-12 text-left space-y-4">
+      <section className="max-w-4xl mt-12 text-left space-y-4">
         <h2 className="text-2xl font-semibold text-gray-800">
           Why MyBestMeals?
         </h2>
