@@ -1,6 +1,6 @@
 export default function HeaderBackground() {
   return (
-    <div className="absolute top-0 left-0 w-full h-45 -z-10 overflow-hidden">
+    <div className="absolute top-0 left-0 w-full h-45 -z-10 overflow-hidden -scale-x-100">
       <svg
         className="w-full h-full"
         xmlns="http://www.w3.org/2000/svg"
