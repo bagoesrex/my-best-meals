@@ -1,8 +1,13 @@
 import { getMeal } from "@/lib/meals";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealSlug);
+
+  if (!meal) {
+    notFound();
+  }
 
   return (
     <main className="relative flex flex-col items-center justify-center w-full px-6 py-10 z-30 text-center">
