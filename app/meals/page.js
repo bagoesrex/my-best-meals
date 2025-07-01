@@ -3,6 +3,11 @@ import { getMeals } from "@/lib/meals";
 import Link from "next/link";
 import { Suspense } from "react";
 
+export const metadata = {
+  title: "All Meals",
+  description: "Browse the delicious meals shared by our megumin community.",
+};
+
 async function Meals() {
   const meals = await getMeals();
   return <MealsGrid meals={meals} />;
