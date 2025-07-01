@@ -1,4 +1,5 @@
 import ImagePicker from "@/components/image-picker";
+import { shareMeal } from "@/lib/action";
 
 export default function ShareMealPage() {
   return (
@@ -16,7 +17,7 @@ export default function ShareMealPage() {
       </header>
 
       <section className="w-full max-w-2xl text-left space-y-6">
-        <form className="space-y-6">
+        <form className="space-y-6" action={shareMeal}>
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full">
               <label

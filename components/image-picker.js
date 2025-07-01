@@ -47,6 +47,7 @@ export default function ImagePicker({ label, name }) {
             ref={imageInput}
             onChange={handleImageChange}
             className="hidden"
+            required
           />
           <button
             type="button"
