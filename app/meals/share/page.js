@@ -1,4 +1,5 @@
 import ImagePicker from "@/components/image-picker";
+import MealsFormSubmit from "@/components/meals-form-submit";
 import { shareMeal } from "@/lib/action";
 
 export default function ShareMealPage() {
@@ -104,12 +105,7 @@ export default function ShareMealPage() {
           </div>
 
           <div className="text-right">
-            <button
-              type="submit"
-              className="px-6 py-3 bg-gradient-to-r from-orange-500 to-yellow-400 text-white rounded-full shadow-md hover:from-orange-600 hover:to-yellow-500 transition"
-            >
-              Share Meal
-            </button>
+            <MealsFormSubmit />
           </div>
         </form>
       </section>
